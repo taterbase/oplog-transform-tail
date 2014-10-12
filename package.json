@@ -1,0 +1,25 @@
+{
+  "name": "oplog-transform-tail",
+  "version": "1.0.0",
+  "description": "Tail the MongoDB oplog and update a secondary store in real time.",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "oplog-transform": "^1.0.2",
+    "mongo-oplog": "^0.1.5"
+  },
+  "devDependencies": {
+    "mocha": "~1.21.4",
+    "mongodb": "~1.4.9",
+    "async": "~0.9.0",
+    "should": "^4.0.4",
+    "lodash.flatten": "^2.4.1"
+  },
+  "scripts": {
+    "test": "./node_modules/.bin/mocha"
+  },
+  "author": "taterbase",
+  "license": "ISC"
+}
