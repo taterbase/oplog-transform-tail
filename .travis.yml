@@ -5,6 +5,9 @@ node_js:
 services:
   - mongodb
 before_script:
+  - sudo service mongodb stop
+  - echo "replSet = set0" >> /etc/mongodb.conf
+  - sudo service mongodb restart
   - sleep 15
   - mongo oplog-transform-tail-test --eval 'rs.initiate()'
   - sleep 15
