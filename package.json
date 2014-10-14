@@ -1,11 +1,17 @@
 {
   "name": "oplog-transform-tail",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Tail the MongoDB oplog and update a secondary store in real time.",
   "main": "index.js",
   "directories": {
     "test": "test"
   },
+  "keywords": [
+    "mongodb",
+    "oplog",
+    "mongo",
+    "tail"
+  ],
   "dependencies": {
     "oplog-transform": "^1.0.2",
     "mongo-oplog": "^0.1.5"
