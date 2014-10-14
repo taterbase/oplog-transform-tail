@@ -6,7 +6,7 @@ services:
   - mongodb
 before_script:
   - sudo service mongodb stop
-  - sudo echo "replSet = set0" >> /etc/mongodb.conf
+  - echo "replSet = set0" | sudo tee -a /etc/mongodb.conf
   - sudo service mongodb restart
   - sleep 15
   - mongo oplog-transform-tail-test --eval 'rs.initiate()'
