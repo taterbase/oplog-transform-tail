@@ -4,3 +4,7 @@ node_js:
   - "0.10"
 services:
   - mongodb
+before_script:
+  - sleep 15
+  - mongo oplog-transform-tail-test --eval 'rs.initiate()'
+  - sleep 15
