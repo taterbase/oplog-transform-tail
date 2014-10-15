@@ -38,3 +38,8 @@ tail({
 ```
 
 See the [oplog-transform docs](https://github.com/taterbase/oplog-transform#hooks) for more in-depth info about how the `insert`, `update`, and `remove` hooks work.
+
+
+___
+
+Made with ⚡️ by [@taterbase](https://twitter.com/taterbase)
