@@ -1,6 +1,6 @@
 {
   "name": "oplog-transform-tail",
-  "version": "1.0.3",
+  "version": "1.1.0",
   "description": "Tail the MongoDB oplog and update a secondary store in real time.",
   "main": "index.js",
   "directories": {
